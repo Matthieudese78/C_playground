@@ -7,6 +7,7 @@ struct person
   float height;
 };
 
+  int x[50];
   // *int is a pointer i.e. an address :
   int y = 7;
   // gets the address in memory where y is stored
@@ -20,6 +21,13 @@ struct person
   // does it also modifies y?
   printf("new value y = %i \n", y);
   // --> yes it does, *p and y are intricate!
+
+  // *p stores the value, i.e. y
+  // p is the pointer for example: 0x7fff46511434,
+  // i want to re-locate the y variable:
+  x[0] = 5;
+  x[3] = 500;
+  printf("%i, %i, %i \n", x[0], x[3], x[49]);
   struct person me;
   struct person you;
   me.age = 33;
