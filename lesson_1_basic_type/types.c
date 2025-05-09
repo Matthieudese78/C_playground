@@ -1,5 +1,10 @@
 #include <stdio.h>
+// numerical, arrays, structures and pointers, char
+//    Integers:
 // stdint.h standardized width in bytes : always the same length
+// portable & predictable
+//    Floating point numbers: floats, doubles (double as much precision as a float), long doubles
+
 struct person
 {
   char name[50];
@@ -7,6 +12,10 @@ struct person
   float height;
 };
 
+int main()
+{
+  char c = 'A';
+  printf("character %c\n", c);
   int x[50];
   // *int is a pointer i.e. an address :
   int y = 7;
