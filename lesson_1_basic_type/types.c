@@ -20,3 +20,9 @@ struct person
   // does it also modifies y?
   printf("new value y = %i \n", y);
   // --> yes it does, *p and y are intricate!
+  struct person me;
+  struct person you;
+  me.age = 33;
+  you.height = 1.80;
+  printf("I'm %i years old but you are %f m tall \n", me.age, you.height);
+}
